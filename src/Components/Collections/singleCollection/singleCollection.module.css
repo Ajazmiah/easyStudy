@@ -1,0 +1,201 @@
+.CollectionName{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  background: #ff9979;
+  align-items: center;
+  padding: 5px;
+  font-size: 1.7rem;
+  color: #fff;
+  width: 200px;
+  margin: 0 auto;
+}
+.cardLists{
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  flex: 0 0 24%;
+  margin-right: 3%;
+  overflow-y: scroll;
+  padding-right: 5px;
+  max-height: 300px;
+}
+.cardLists::-webkit-scrollbar{
+  width: 10px;
+  background:#323939;
+}
+.cardLists::-webkit-scrollbar-thumb{
+  background: #ff8e6b;
+  border-radius: 10px;
+}
+.Card:nth-child(odd){
+  background: #ff855f;
+}
+.Card:nth-child(even){
+  background: #ff9a52;
+}
+.Card{
+  min-height: 100px;
+  height: auto;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.CardQuestion{
+  height: 100%;
+  min-height: 80px;
+  overflow-wrap: anywhere;
+  text-align: left;
+  overflow-y: hidden;
+  height: 80px;
+  max-height: 80px;
+  padding: .5rem;
+}
+.Delete{
+  padding-right: .4rem;
+  padding-right: 0.4rem;
+  font-size: 1.4rem;
+  margin-top: 5px;
+  color: red;
+  background: #414040;
+  padding: .3rem;
+}
+.Wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  height: 100vh;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.DisplayContainer{
+  flex: 0 0 450px;
+  overflow: hidden;
+}
+.FlashCards{
+  display: flex;
+}
+.CurrentCardDiv{
+  flex: 0 0 100%;
+  transition: .5s;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+}
+.CurrentCard{
+  height: 100%;
+  /* box-shadow: 0px 1px 3px 0px #d1cecbc2; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.CurrentCard p{
+  margin: 2px 0;
+  padding: 0;
+}
+.FlipCard{
+  position: relative;
+  top: 4px;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.9s ease;
+  cursor: pointer;
+}
+.FlipCard:hover{
+  transform: rotateY(180deg);
+}
+.FlipCard:nth-child(odd){
+  background: #358c39a1;
+}
+.Front{
+  width: 80%;
+  margin: 0 auto;
+  overflow-y: scroll;
+  overflow-wrap: anywhere
+}
+.Front::-webkit-scrollbar{
+  width: 5px;
+}
+.contentWrapper{
+  padding: 0 1rem;
+  text-align: left;
+  overflow-y: auto;
+}
+.Back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fff;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+.NavigateDiv{
+  display: flex;
+  justify-content: space-around;
+  width: 24%;
+  margin: 0 auto;
+  padding-top: 30px;
+  font-size: 1.9rem;
+}
+.Add{
+  background: #ff5722d4;
+  color: #fff;
+  padding: .2px;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*Media Queies*/
+@media all and (max-width: 750px) {
+  .Wrapper{
+    max-width: 700px;
+    margin: 0 auto;
+    display: block;
+  }
+  .cardLists{
+    display: flex;
+    overflow: scroll;
+    max-width: 80%;
+    min-width: 100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    overflow-y: hidden;
+  }
+  .DisplayContainer{
+    overflow: hidden;
+    min-width: 450px;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .Card{
+    flex: 0 0 49%;
+  }
+}
+@media all and (max-width: 750px) {
+
+  .DisplayContainer{
+    max-width: 95%;
+    min-width: 300px;
+  }
+
+}

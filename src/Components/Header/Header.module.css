@@ -1,0 +1,104 @@
+.Header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 52px;
+  height: 52px;
+  margin-bottom: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+.Logo{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.BurgerMenu{
+
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  position: relative;
+  z-index: 1;
+  background: white;
+  border-radius: 5px;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.Logo h3{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: serif;
+  padding: .5rem;
+  font-weight: 200;
+}
+.Logo span{
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.Nav{flex: 0 0 70%;}
+.NavList{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-basis: 100%;
+}
+.NavItem{
+  list-style: none;
+  margin-left: 15px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+}
+.NavItem::after{
+  display: block;
+  content: "";
+  height:4px;
+  transition: all .4s;
+  width: 100%;
+  background: #2b8bc0;
+  transform: translateX(-100%);
+
+}
+.NavItem:hover::after{transform: translateX(0);}
+
+
+
+/*MEDIA QURIES */
+@media all and (max-width: 800px) {
+.BurgerMenu{
+  display: block;
+  z-index: 101
+}
+.Nav{
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  height: 108vh;
+  background: #201d1d;
+  align-items: initial;
+  transition: .3s;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transform: translateY(-100%);
+}
+.toggleMenu{transform: translateY(0);}
+.NavList{
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #ffff;
+  height: 300px;
+}
+
+}

@@ -1,0 +1,41 @@
+.Home{
+  background-image: url('../../Assests/img/background.png');
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.P{
+  font-size: 3rem;
+  color: #fff;
+  padding: 0 5rem;
+  text-transform: uppercase;
+}
+.Btn{
+  padding: 1rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-size: .6rem;
+  width: 150px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.Add{
+  background: #FF5722;
+}
+.View{
+  background: #792eff;
+}
+@media only screen and (max-width:400px){
+  .P{
+    padding: 1rem;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,19 @@
+.Main{
+  min-height: 100vh;
+  background: rgba(221, 218, 218, 0.42);
+  box-sizing: border-box;
+}
+.Footer{
+  height: 100px;
+background: #161617;
+color: #fff;
+text-align: center;
+display: flex;
+flex-direction: column;
+font-size: .8rem;
+align-items: center;
+justify-content: center;
+}
+.Footer a{
+  text-decoration: underline;
+}
