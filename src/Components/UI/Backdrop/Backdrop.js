@@ -9,7 +9,7 @@ const Backdrop = (props)=>{
   const {setShowForm, showForm} = useContext(CollectionContext)
 
   return(
-    showForm ? <div className={style.Backdrop} onClick={()=>setShowForm(!showForm)}></div> : null
+    showForm ? <div className={style.Backdrop} onClick={()=>setShowForm(prev => !prev)}></div> : null
   )
 }
 export default Backdrop
