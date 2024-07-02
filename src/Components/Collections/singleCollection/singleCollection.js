@@ -15,7 +15,7 @@ const SingleComponent = React.memo((props) => {
   const [viewCard, setViewCard] = useState({});
   const [position, setPosition] = useState(1);
   const [translate, setTranslate] = useState(0);
-
+ 
   let mainDisplay = null;
   let display = <h4>NO MORE CARD IN THIS COLLECTION</h4>;
 
