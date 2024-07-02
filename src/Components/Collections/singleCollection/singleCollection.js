@@ -9,7 +9,7 @@ import{MdAdd} from 'react-icons/md'
 import { BsTrash } from "react-icons/bs";
 import { CollectionContext } from "../../../collectionContext/collectionContext"; 
  
-const SingleComponent = React.memo((props) => {
+const SingleComponent = React.memo((props) => { 
   const colName = props.match.params.name;
   const { Collectionstate, dispatch,setShowForm, showForm, setAddColName } = useContext(CollectionContext);
   const [viewCard, setViewCard] = useState({});
