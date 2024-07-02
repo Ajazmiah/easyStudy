@@ -5,7 +5,7 @@ import style from "./singleCollection.module.css";
 import MainDisplay from "./CardMainDisplay";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import{MdAdd} from 'react-icons/md'
+import{MdAdd} from 'react-icons/md' 
 import { BsTrash } from "react-icons/bs";
 import { CollectionContext } from "../../../collectionContext/collectionContext";
 
