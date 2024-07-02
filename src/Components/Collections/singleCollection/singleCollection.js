@@ -7,7 +7,7 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import{MdAdd} from 'react-icons/md'  
 import { BsTrash } from "react-icons/bs";
-import { CollectionContext } from "../../../collectionContext/collectionContext";
+import { CollectionContext } from "../../../collectionContext/collectionContext"; 
 
 const SingleComponent = React.memo((props) => {
   const colName = props.match.params.name;
