@@ -20,7 +20,7 @@ const SingleComponent = React.memo((props) => {
   let display = <h4>NO MORE CARD IN THIS COLLECTION</h4>;
 
   useEffect(() => {
-    leftArrow();
+    leftArrow(); 
   }, [Collectionstate]);
 
   let len = Collectionstate[colName].length - 1;
